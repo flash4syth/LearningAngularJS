@@ -7,6 +7,7 @@ module.exports = function (config) {
 			"public_html/js/libs/angular.min.js",
 			"public_html/js/libs/angular-mocks.js",
 			"public_html/js/libs/angular-route.min.js",
+			"public_html/js/libs/angular-resource.min.js",
 			"public_html/js/*.js",
 			"test/**/*Spec.js"
 		],

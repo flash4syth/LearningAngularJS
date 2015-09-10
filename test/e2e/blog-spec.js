@@ -8,9 +8,9 @@ describe("Blog Application Test", function(){
 		var blogList = element.all(by.repeater('blogPost in blogList'));
 
 		//tests the size of the blogList
-		expect(blogList.count()).toEqual(2);
+		expect(blogList.count()).toEqual(1);
 		browser.get(
-		"http://localhost:8383/AngularJsBlog/#!/blogPost/1");
+		"http://localhost:8383/AngularJsBlog/#!/blogPost/5394e59c4f50850000e6b7ea");
 	    	expect(browser.getTitle()).toEqual("AngularJS Blog");
 
 		//gets the comment list
