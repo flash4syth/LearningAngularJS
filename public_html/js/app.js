@@ -1,13 +1,14 @@
 
 /* chapter5/app.js */
 
-'use strict'
+'use strict';
 /* App Module */
 
 var blogApp = angular.module('blogApp', [
 	'ngRoute',
 	'blogControllers',
-	'blogServices'
+	'blogServices',
+	'blogBusinessServices'
 ]);
 
 blogApp.config(['$routeProvider', '$locationProvider',
