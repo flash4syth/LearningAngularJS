@@ -26,6 +26,7 @@ blogControllers.controller('BlogViewCtrl',
   function BlogViewCtrl($scope, $routeParams, BlogPost){
 		
 	var blogId = $routeParams.id;
+
 	$scope.blg = 1;
 
 	BlogPost.get({id: blogId},
