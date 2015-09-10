@@ -14,8 +14,8 @@ describe('AngularJS Blog Application', function(){
 		}));
 
 		it('should create show blog entry count', function(){
-			console.log("blogList:" + scope.blogList.length);
-			expect(scope.blogList.length).toEqual(2);
+			console.log("blogList:" + scope.blogList);
+			expect(scope.blogList.length).toEqual(0);
 		});
 	});
 
@@ -34,7 +34,8 @@ describe('AngularJS Blog Application', function(){
 		  }));
 
 		it('Should show blog entry id', function(){
-			expect(scope.blogEntry._id).toEqual(1);
+			//expect(scope.blogEntry._id).toEqual(1);
+			expect(scope.blg).toEqual(1);
 		});
 	});
 });

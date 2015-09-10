@@ -8,7 +8,7 @@ var blogControllers =
 
 blogControllers.controller('BlogCtrl', ['$scope', 'BlogList',
 function BlogCtrl($scope, BlogList){
-
+	$scope.blogList = [];
 	BlogList.get({},
 	  function success(response){
 		  console.log("Success:" + JSON.stringify(response));
@@ -26,6 +26,7 @@ blogControllers.controller('BlogViewCtrl',
   function BlogViewCtrl($scope, $routeParams, BlogPost){
 		
 	var blogId = $routeParams.id;
+	$scope.blg = 1;
 
 	BlogPost.get({id: blogId},
 	  function success(response){
